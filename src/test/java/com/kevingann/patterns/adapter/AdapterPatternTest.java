@@ -6,16 +6,18 @@ import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 
-public class AdapterTest {
+public class AdapterPatternTest {
 
     @Test
-    public void demoAdapter() {
+    public void testThatAdapterPatternWorks() {
+        // This example is of a client that's pulling employee data from multiple locations and returning it.
         EmployeeClient client = new EmployeeClient();
 
         List<Employee> employees = client.getEmployeeList();
 
-        System.out.println(employees);
         assertEquals(employees.size(), 3);
+
+        System.out.println(employees);
     }
 
 }

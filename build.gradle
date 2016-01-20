@@ -6,4 +6,5 @@ repositories {
 
 dependencies {
     compile 'junit:junit:4.12'
+    compile 'org.apache.derby:derby:10.12.1.1'
 }
