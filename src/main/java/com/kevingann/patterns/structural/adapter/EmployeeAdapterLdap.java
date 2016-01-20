@@ -1,31 +1,32 @@
-package com.kevingann.patterns.adapter;
+package com.kevingann.patterns.structural.adapter;
 
-public class EmployeeAdapterCSV implements Employee {
+// This is the adapter that adapts the EmployeeLdap to the Employee interface.
+public class EmployeeAdapterLdap implements Employee {
 
-    private EmployeeCSV instance;
+    private EmployeeLdap instance;
 
-    public EmployeeAdapterCSV(EmployeeCSV instance) {
-        this.instance = instance;
+    public EmployeeAdapterLdap(EmployeeLdap employeeLdap) {
+        this.instance = employeeLdap;
     }
 
     @Override
     public String getId() {
-        return String.valueOf(instance.getId());
+        return instance.getCn();
     }
 
     @Override
     public String getFirstName() {
-        return instance.getFirstName();
+        return instance.getGivenName();
     }
 
     @Override
     public String getLastName() {
-        return instance.getLastname();
+        return instance.getSurname();
     }
 
     @Override
     public String getEmail() {
-        return instance.getEmailAddress();
+        return instance.getMail();
     }
 
     // This could be considered as bleeding into a Decorator pattern since it adds additional functionality.

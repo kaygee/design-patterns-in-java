@@ -1,4 +1,4 @@
-package com.kevingann.patterns.bridge;
+package com.kevingann.patterns.structural.bridge;
 
 public class Circle extends Shape {
 

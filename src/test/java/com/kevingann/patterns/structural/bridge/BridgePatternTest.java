@@ -1,4 +1,4 @@
-package com.kevingann.patterns.bridge;
+package com.kevingann.patterns.structural.bridge;
 
 import org.junit.Test;
 

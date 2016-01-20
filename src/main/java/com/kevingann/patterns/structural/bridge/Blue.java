@@ -1,4 +1,4 @@
-package com.kevingann.patterns.bridge;
+package com.kevingann.patterns.structural.bridge;
 
 /**
  * Notice the implementation of the method from Color

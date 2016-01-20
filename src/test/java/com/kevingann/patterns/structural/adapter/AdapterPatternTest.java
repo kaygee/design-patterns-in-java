@@ -1,4 +1,4 @@
-package com.kevingann.patterns.adapter;
+package com.kevingann.patterns.structural.adapter;
 
 import org.junit.Test;
 
